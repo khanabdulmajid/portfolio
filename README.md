@@ -3,7 +3,7 @@
 #### Technical Skills: Python, SQL, Azure, Tensorflow, LangChain
 
 ## Education	        		
-- B.Tech, Electronics & Comm. | Jamia Hamdard University (_July_2019)
+- B.Tech, Electronics & Communications Engineering | Jamia Hamdard University ( Aug 2015 - July 2019)
 
 ## Work Experience
 **Sr. Systems Engineer @ Infosys (_July 2021 - Present_)**
@@ -23,7 +23,8 @@ metrics and KPIs, and deliver actionable insights.
   - Implemented data augmentation techniques to enhance the model's performance.
   - Evaluated the model using accuracy, precision, recall, and F1-score metrics.
   - Deployed the model using Flask for creating a user-friendly web application interface.
-##### Technologies and Tools: Python, TensorFlow, Keras, OpenCV, Flask, AWS (for deployment).
+
+#### Technologies and Tools: Python, TensorFlow, Keras, OpenCV, Flask, AWS (for deployment).
 
 ### Vehicle Detection Using OpenCV's Haar Casdcade
 #### Project Overview: Developed a real-time car detection system using OpenCV and cascade classifiers. The project aimed to detect cars in images and video streams with high accuracy.
