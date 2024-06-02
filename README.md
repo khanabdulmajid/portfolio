@@ -24,7 +24,7 @@ metrics and KPIs, and deliver actionable insights.
   - Evaluated the model using accuracy, precision, recall, and F1-score metrics.
   - Deployed the model using Flask for creating a user-friendly web application interface.
 
-#### Technologies and Tools: Python, TensorFlow, Keras, OpenCV, Flask, AWS (for deployment).
+#### Technologies and Tools: Python, TensorFlow, Keras, OpenCV, Flask.
 
 ### Vehicle Detection Using OpenCV's Haar Casdcade
 #### Project Overview: Developed a real-time car detection system using OpenCV and cascade classifiers. The project aimed to detect cars in images and video streams with high accuracy.
