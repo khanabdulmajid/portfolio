@@ -2,7 +2,6 @@
 
 #### Technical Skills
 - **Languages:** Python, SQL
-- **Platforms:** Azure
 - **Frameworks:** TensorFlow
 - **Specializations:** Computer Vision, Generative AI
 
