@@ -1,40 +1,69 @@
 # Data Analyst
 
-#### Technical Skills: Python, SQL, Azure, Tensorflow, LangChain
+#### Technical Skills
+- **Languages:** Python, SQL
+- **Platforms:** Azure
+- **Frameworks:** TensorFlow
+- **Specializations:** Computer Vision, Generative AI
 
-## Education	        		
-- B.Tech, Electronics & Communications Engineering | Jamia Hamdard University ( Aug 2015 - July 2019)
+## Education
+- **B.Tech, Electronics & Communications Engineering**  
+  Jamia Hamdard University  
+  _(Aug 2015 - July 2019)_
 
 ## Work Experience
-**Sr. Systems Engineer @ Infosys (_July 2021 - Present_)**
-- Utilized SQL and Python to analyze large datasets, resulting in the identification of key insights.
-- Worked closely with product managers and user experience designers to translate data-driven
-insights into actionable recommendations for product development.
-- Participated in daily scrum meeting with team to discuss the challenges and development of the
-project.
-- Collaborated closely with project managers to understand analytical needs, define critical
-metrics and KPIs, and deliver actionable insights.
+### **Sr. Systems Engineer**  
+**Infosys**  
+_July 2021 - Present_
+
+- Analyzed large datasets using SQL and Python, leading to the identification of key business insights.
+- Collaborated with product managers and UX designers to convert data-driven insights into actionable product recommendations.
+- Participated in daily scrum meetings to discuss project challenges and progress.
+- Worked closely with project managers to define critical metrics and KPIs, delivering actionable insights that guided decision-making.
 
 ## Projects
-### Dog Breed Classifier using Convolutional Neural Network(CNN)
-#### Project Overview: Developed a machine learning model to classify dog breeds from images with high accuracy. The project involved data preprocessing, model building, and deployment.
-  - Collected and preprocessed a dataset of dog images from various sources.
-  - Built and fine-tuned a convolutional neural network (CNN) using TensorFlow and Keras.
-  - Implemented data augmentation techniques to enhance the model's performance.
-  - Evaluated the model using accuracy, precision, recall, and F1-score metrics.
-  - Deployed the model using Flask for creating a user-friendly web application interface.
 
-#### Technologies and Tools: Python, TensorFlow, Keras, OpenCV, Flask.
+### **Facial Recognition System using Convolutional Neural Networks (CNNs)**
+#### Project Overview
+Developed a robust facial recognition system capable of accurately identifying individuals from a database of images. This project involved extensive data preprocessing, model architecture design, training, and real-time application testing.
 
-### Vehicle Detection Using OpenCV's Haar Casdcade
-#### Project Overview: Developed a real-time car detection system using OpenCV and cascade classifiers. The project aimed to detect cars in images and video streams with high accuracy.
-Key Responsibilities:
+- **Responsibilities:**
+  - Preprocessed and normalized the Labeled Faces in the Wild (LFW) dataset.
+  - Designed and implemented a CNN using TensorFlow and Keras, optimizing for accuracy and performance.
+  - Trained the model to achieve over 95% accuracy on the test set.
+  - Conducted real-time application testing using OpenCV to ensure the system's reliability.
+  
+- **Technologies and Tools:** Python, TensorFlow, Keras, OpenCV, NumPy, Pandas, Matplotlib
 
-  - Gathered and labeled a dataset of car images for training the cascade classifier.
-  - Created and trained the cascade classifier using OpenCV.
-  - Implemented a real-time car detection system that processes video streams.
-  - Optimized the detection algorithm to improve speed and accuracy.
-  - Evaluated the system's performance using precision and recall metrics.
+### **Real-Time Object Detection and Tracking System**
+#### Project Overview
+Built a real-time object detection and tracking system using OpenCV, focusing on detecting and tracking objects in live video streams.
 
-#### Technologies and Tools: Python, OpenCV, Haar Cascade Classifier, NumPy.
+- **Responsibilities:**
+  - Developed the system using techniques like background subtraction and contour detection.
+  - Implemented tracking algorithms such as KCF and CSRT to maintain object focus even under challenging conditions like occlusion and variable lighting.
+  - Optimized the system for real-time performance, ensuring smooth and accurate tracking.
 
+- **Technologies and Tools:** Python, OpenCV, KCF, CSRT, NumPy
+
+### **GAN Loss Function Exploration: LSGAN and Wasserstein Distance**
+#### Project Overview
+Explored different loss functions in GANs to improve training stability and image generation quality. This project focused on the implementation of Least Squares GANs (LSGANs) and the application of Wasserstein Distance to address common issues like mode collapse and unstable training.
+
+- **Responsibilities:**
+  - Implemented LSGAN to minimize the Pearson χ² divergence and achieve more stable training and higher-quality image generation.
+  - Integrated Wasserstein Distance into GANs to provide a smoother gradient and overcome mode collapse, leading to better convergence and more realistic outputs.
+  - Conducted extensive testing and comparison of generated images, highlighting the improvements in stability and quality.
+  
+- **Technologies and Tools:** Python, TensorFlow, Keras, NumPy
+
+### **DCGANs for Small Color Photographs Generation**
+#### Project Overview
+Applied Deep Convolutional GANs (DCGANs) to generate small color photographs. The project involved adapting the GAN architecture to handle color data and achieve high-quality synthetic image generation.
+
+- **Responsibilities:**
+  - Preprocessed a dataset of small color photographs, including normalization and augmentation techniques.
+  - Designed and trained the DCGAN model to generate realistic color images by capturing intricate details through convolutional layers.
+  - Evaluated the model's performance, achieving realistic image generation after numerous training epochs.
+
+- **Technologies and Tools:** Python, TensorFlow, Keras, OpenCV
