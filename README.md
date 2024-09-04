@@ -6,11 +6,6 @@
 - **Frameworks:** TensorFlow
 - **Specializations:** Computer Vision, Generative AI
 
-## Education
-- **B.Tech, Electronics & Communications Engineering**  
-  Jamia Hamdard University  
-  _(Aug 2015 - July 2019)_
-
 ## Work Experience
 ### **Sr. Systems Engineer**  
 **Infosys**  
@@ -20,6 +15,11 @@ _July 2021 - Present_
 - Collaborated with product managers and UX designers to convert data-driven insights into actionable product recommendations.
 - Participated in daily scrum meetings to discuss project challenges and progress.
 - Worked closely with project managers to define critical metrics and KPIs, delivering actionable insights that guided decision-making.
+
+## Education
+- **Bachelor of Technology, Electronics & Communications Engineering**  
+  Jamia Hamdard University  
+  _(Aug 2015 - July 2019)_
 
 ## Projects
 
