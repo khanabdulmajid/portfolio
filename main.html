@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Meta Tags -->
+    <meta name="description" content="Software Developer with 3+ years of experience in automation, computer vision, and scalable pipelines. Skilled in Python, KNIME, TensorFlow, and data-driven innovation." />
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="Abdul Majid Khan's Portfolio">
+    <meta itemprop="description" content="Software Developer with 3+ years of experience in automation, computer vision, and scalable pipelines. Skilled in Python, KNIME, TensorFlow, and data-driven innovation.">
+    <meta itemprop="image" content="assets/images/sharing-card.png">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://yourdomain.com">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Abdul Majid Khan's Portfolio">
+    <meta property="og:description" content="Software Developer with 3+ years of experience in automation, computer vision, and scalable pipelines. Skilled in Python, KNIME, TensorFlow, and data-driven innovation.">
+    <meta property="og:image" content="assets/images/sharing-card.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Abdul Majid Khan's Portfolio">
+    <meta name="twitter:description" content="Software Developer with 3+ years of experience in automation, computer vision, and scalable pipelines. Skilled in Python, KNIME, TensorFlow, and data-driven innovation.">
+    <meta name="twitter:image" content="assets/images/sharing-card.png">
+
+    <link rel="shortcut icon" href="assets/images/favicons.png" type="image/png" />
+    <link rel="preload" href="assets/fonts/Mona-Sans.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+
+    <title>Abdul Majid Khan's Portfolio</title>
+  </head>
+  <body>
+    <script>
+      const theme = localStorage.getItem("theme") || "dark";
+      document.body.classList.add(theme);
+    </script>
+
+    <header class="header">
+      <div class="menu-btn-container">
+        <div class="container">
+          <button type="button" class="menu-btn">menu</button>
+        </div>
+      </div>
+
+      <nav class="nav hidden">
+        <ol class="nav-items">
+          <li class="nav-item"><a href="#">Home</a></li>
+          <li class="nav-item"><a href="#work">My Work</a></li>
+          <li class="nav-item"><a href="#skills">My Skills</a></li>
+          <li class="nav-item"><a href="#certifications">My Achievements</a></li>
+          <li class="nav-item"><a href="#contact" data-focused="last-focused">Contact</a></li>
+        </ol>
+      </nav>
+
+      <div class="container">
+        <div class="header-textbox">
+          <h1 class="h1">
+            <span>Hi, I'm Abdul Majid Khan</span>
+            <span>AI/ML(Enthusiast) | Python Developer</span>
+          </h1>
+          <p class="header-text">
+            An aspiring AI/ML Engineer and a Python developer with experience in automation, deep learning, and computer vision. Passionate about building intelligent systems that drive business impact.
+          </p>
+          <div class="header-btns">
+            <a href="#contact" class="btn btn-cta">Hire me</a>
+            <a href="https://drive.google.com/file/d/14_F1EzrMHU3LrbExBCBSFV-xUAIuJiwd/view?usp=sharing" class="btn btn-secondary" target="_blank">Download Resume</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="work">
+        <div class="container">
+          <h2 class="h2" id="work">Selected Work</h2>
+          <div class="work-boxes">
+            <div class="work-box">
+              <div class="work-textbox">
+                <h3 class="h3">Multi-language Invoice Extractor</h3>
+                <p class="work-text">
+                  Intelligent invoice parsing system using Google Gemini LLM with OCR and multilingual support. Integrated with a Streamlit UI for real-time uploads and parsed results.
+                </p>
+                <ol class="work-technologies">
+                  <li>Python</li>
+                  <li>Streamlit</li>
+                  <li>Gemini LLM</li>
+                  <li>Tesseract</li>
+                </ol>
+                <div class="work-links">
+                  <a href="https://github.com/khanabdulmajid" target="_blank" class="link">Explore this project</a>
+                  <a href="https://github.com/khanabdulmajid" target="_blank" title="Source code">
+                    <img src="assets/images/social-links/github.svg" alt="GitHub" loading="lazy" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="work-box">
+              <div class="work-textbox">
+                <h3 class="h3">Facial Recognition System</h3>
+                <p class="work-text">
+                  Real-time facial recognition system capable of identifying individuals from an image database using CNN and OpenCV.
+                </p>
+                <ol class="work-technologies">
+                  <li>Python</li>
+                  <li>OpenCV</li>
+                  <li>TensorFlow</li>
+                </ol>
+                <div class="work-links">
+                  <a href="https://github.com/khanabdulmajid" target="_blank" class="link">Explore this project</a>
+                  <a href="https://github.com/khanabdulmajid" target="_blank" title="Source code">
+                    <img src="assets/images/social-links/github.svg" alt="GitHub" loading="lazy" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills">
+        <div class="container">
+          <h2 class="h2" id="skills">My Toolkit</h2>
+          <div class="skills-imgs">
+            <img src="assets/images/skills/python.png" alt="Python" class="skills-img" loading="lazy" title="Python">
+            <img src="assets/images/skills/sql.png" alt="SQL" class="skills-img" loading="lazy" title="SQL">
+            <!-- <img src="assets/images/skills/pandas.webp" alt="Pandas" class="skills-img" loading="lazy" title="Pandas"> -->
+            <img src="assets/images/skills/tensorflow.png" alt="TensorFlow" class="skills-img" loading="lazy" title="TensorFlow">
+            <img src="assets/images/skills/keras.png" alt="Keras" class="skills-img" loading="lazy" title="Keras">
+            <img src="assets/images/skills/mlflow.png" alt="MLflow" class="skills-img" loading="lazy" title="Git">
+            <img src="assets/images/skills/fastapi.png" alt="FastAPI" class="skills-img" loading="lazy" title="Git">
+            <img src="assets/images/skills/opencv.png" alt="OpenCV" class="skills-img" loading="lazy" title="OpenCV">
+            <img src="assets/images/skills/git.webp" alt="Git" class="skills-img" loading="lazy" title="Git">
+          </div>
+        </div>
+      </section>
+      <section class="certifications">
+  <div class="container">
+    <h2 class="h2" id="certifications">Achievements</h2>
+    <div class="cert-grid">
+
+      <div class="cert-card">
+        <a href="https://drive.google.com/file/d/14_F1EzrMHU3LrbExBCBSFV-xUAIuJiwd/view?usp=sharing" target="_blank">
+          <img src="assets/images/certificates/data-science-cert.png" alt="Data Science Professional Certificate" />
+          <p class="cert-title">Data Science Professional - Infosys</p>
+        </a>
+      </div>
+
+      <div class="cert-card">
+        <a href="https://drive.google.com/file/d/1wMYSMl6CS8MYsDl0_SQWq0dW8YD4Kret/view?usp=sharing" target="_blank">
+          <img src="assets/images/certificates/python-cert.png" alt="Python Programmer Certificate" />
+          <p class="cert-title">Certified Python Programmer - Infosys</p>
+        </a>
+      </div>
+
+      <div class="cert-card">
+        <a href="https://drive.google.com/file/d/1GDnsr1sjUNNAvWfOGWRJY5qcJOiR2uKT/view?usp=sharing" target="_blank">
+          <img src="assets/images/certificates/genai-cert.png" alt="Generative AI Certificate" />
+          <p class="cert-title">Applied Generative AI Professional - Infosys</p>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+      <section class="contact">
+  <div class="container">
+    <h2 class="h2" id="contact">Send Message</h2>
+    <div class="contact-content">
+      
+      <div class="contact-textbox">
+        <strong class="hire-alert">
+          <span class="indicator"></span>
+          Available for hire
+        </strong>
+        <p class="contact-text">
+          As a data scientist and software engineer, I build intelligent systems that enhance business efficiency and uncover insights through automation, vision, and machine learning.
+        </p>
+        <p class="contact-text">— Abdul Majid Khan</p>
+      </div>
+
+      <!-- ✅ Formsubmit integration -->
+      <form action="https://formsubmit.co/online.activity@yahoo.com" method="POST" class="contact-form">
+        <!-- 🛡️ Spam protection (honeypot) -->
+        <input type="text" name="_honey" style="display:none">
+
+        <!-- 🚫 Disable CAPTCHA -->
+        <input type="hidden" name="_captcha" value="false">
+
+        <!-- ✅ Optional: redirect after submit -->
+        <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+
+        <div class="form-field">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" required />
+        </div>
+
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+        </div>
+
+        <div class="form-field">
+          <label for="message">How can I help you?</label>
+          <textarea name="message" id="message" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-cta">Send</button>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <nav>
+            <ol class="footer-links">
+              <li class="footer-link">
+                <a title="GitHub" href="https://github.com/khanabdulmajid" target="_blank" rel="noopener">
+                  <img loading="lazy" src="assets/images/social-links/github.svg" alt="GitHub" />
+                </a>
+              </li>
+              <li class="footer-link">
+                <a title="LinkedIn" href="https://linkedin.com/in/AbdulMajidKhan1997" target="_blank" rel="noopener">
+                  <img loading="lazy" src="assets/images/social-links/linkedin.svg" alt="LinkedIn" />
+                </a>
+              </li>
+            </ol>
+          </nav>
+          <label class="theme-switch" for="theme-switch">
+            <span>Dark Theme</span>
+            <input type="checkbox" id="theme-switch" role="switch" />
+          </label>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
