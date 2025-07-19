@@ -189,31 +189,35 @@
       </div>
 
       <!-- ✅ Formsubmit integration -->
-      <form action="https://formsubmit.co/c8391f1060f532591ebaaf1c16f341a8" method="POST" class="contact-form">
-        <!-- 🛡️ Spam protection (honeypot) -->
-        <input type="text" name="_honey" style="display:none">
+      <!-- ✅ Formsubmit integration with redirect -->
+<form action="https://formsubmit.co/c8391f1060f532591ebaaf1c16f341a8" method="POST" class="contact-form">
+  <!-- 🛡️ Spam protection (honeypot) -->
+  <input type="text" name="_honey" style="display:none">
 
-        <!-- 🚫 Disable CAPTCHA -->
-        <input type="hidden" name="_captcha" value="false">
-    
+  <!-- 🚫 Disable CAPTCHA -->
+  <input type="hidden" name="_captcha" value="false">
 
-        <div class="form-field">
-          <label for="name">Name</label>
-          <input type="text" name="name" id="name" required />
-        </div>
+  <!-- ✅ Redirect after submission -->
+  <input type="hidden" name="_next" value="https://khanabdulmajid.github.io/portfolio/">
 
-        <div class="form-field">
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" required />
-        </div>
+  <div class="form-field">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" required />
+  </div>
 
-        <div class="form-field">
-          <label for="message">How can I help you?</label>
-          <textarea name="message" id="message" required></textarea>
-        </div>
+  <div class="form-field">
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" required />
+  </div>
 
-        <button type="submit" class="btn btn-cta">Send</button>
-      </form>
+  <div class="form-field">
+    <label for="message">How can I help you?</label>
+    <textarea name="message" id="message" required></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-cta">Send</button>
+</form>
+
 
     </div>
   </div>
