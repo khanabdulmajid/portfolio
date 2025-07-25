@@ -201,59 +201,55 @@
 
 
   <section class="contact">
-    <div class="container">
-      <h2 class="h2" id="contact">Send Message</h2>
+  <div class="container">
+    <h2 class="h2" id="contact">Send Message</h2>
+    <div class="contact-content">
+      
+      <div class="contact-textbox">
+        <strong class="hire-alert">
+          <span class="indicator"></span>
+          Available for hire
+        </strong>
+        <p class="contact-text">
+          As a data scientist and software engineer, I build intelligent systems that enhance business efficiency and uncover insights through automation, vision, and machine learning.
+        </p>
+        <p class="contact-text">— Abdul Majid Khan</p>
+      </div>
 
-      <div class="contact-content">
-        
-        <!-- 📢 Left Text Panel -->
-        <div class="contact-textbox">
-          <strong class="hire-alert">
-            <span class="indicator"></span>
-            Available for hire
-          </strong>
-          <p class="contact-text">
-            As a data scientist and software engineer, I build intelligent systems that enhance business efficiency and uncover insights through automation, vision, and machine learning.
-          </p>
-          <p class="contact-text">— Abdul Majid Khan</p>
+      <!-- ✅ Formsubmit integration -->
+      <!-- ✅ Formsubmit integration with redirect -->
+      <form action="https://formsubmit.co/c8391f1060f532591ebaaf1c16f341a8" method="POST" class="contact-form">
+        <!-- 🛡️ Spam protection (honeypot) -->
+        <input type="text" name="_honey" style="display:none">
+
+        <!-- 🚫 Disable CAPTCHA -->
+        <input type="hidden" name="_captcha" value="false">
+
+        <!-- ✅ Redirect after submission -->
+        <input type="hidden" name="_next" value="https://khanabdulmajid.github.io/portfolio/">
+
+        <div class="form-field">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" required />
         </div>
 
-        <!-- 📩 Contact Form (FormSubmit Integration) -->
-        <form 
-          action="https://formsubmit.co/c8391f1060f532591ebaaf1c16f341a8" 
-          method="POST" 
-          class="contact-form"
-        >
-          <!-- Honeypot for spam protection -->
-          <input type="text" name="_honey" style="display: none;" />
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+        </div>
 
-          <!-- Disable CAPTCHA -->
-          <input type="hidden" name="_captcha" value="false" />
+        <div class="form-field">
+          <label for="message">How can I help you?</label>
+          <textarea name="message" id="message" required></textarea>
+        </div>
 
-          <!-- Redirect URL after successful form submission -->
-          <input type="hidden" name="_next" value="https://khanabdulmajid.github.io/portfolio/" />
+        <button type="submit" class="btn btn-cta">Send</button>
+      </form>
 
-          <div class="form-field">
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" required />
-          </div>
-
-          <div class="form-field">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" required />
-          </div>
-
-          <div class="form-field">
-            <label for="message">How can I help you?</label>
-            <textarea name="message" id="message" required></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-cta">Send</button>
-        </form>
-
-      </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
 
 </main>
@@ -279,7 +275,7 @@
             <span>Dark Theme</span>
             <input type="checkbox" id="theme-switch" role="switch" />
           </label>
-        </div>
+        </div>  
       </div>
     </footer>
   </body>
