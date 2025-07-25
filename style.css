@@ -359,8 +359,9 @@ body.light .link::after {
 /* --------------------------------- */
 
 section:not(:first-child) {
-  padding-block-start: var(--gutter-huge);
+  padding-block-start: 4.75rem; /* or even var(--gutter-small) */
 }
+
 
 section:first-child {
   padding-block-start: 7rem;
@@ -1348,21 +1349,25 @@ input:checked {
 }
 
 .cert-card {
-  width: 400px;
+  width: 500px; /* increased from 400px */
   text-align: center;
   transition: transform 0.2s ease;
 }
+
+.cert-card img {
+  width: 100%;
+  height: 300px; /* add fixed height for larger image */
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
 
 .cert-card:hover {
   transform: scale(1.05);
 }
 
-.cert-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
+
 
 .cert-title {
   margin-top: 0.6rem;
@@ -1384,62 +1389,151 @@ body.light .cert-title {
 
 
 
+/* 
+.work {
+  margin-top: 3rem;
+}
+
+.work .h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
 .work-boxes {
   display: flex;
   gap: 2rem;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
 }
 
+.work-boxes::-webkit-scrollbar {
+  display: none; /* Optional: hide scrollbar 
+}*/
 
+/* === Work Section Layout === */
+.work-boxes {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;           /* or use nowrap for horizontal scroll */
+  justify-content: center;
+}
 
 
 .work-box {
-  background-color: var(--box-bg);
-  color: var(--box-text);
-  border: 1px solid var(--box-border);
-  flex: 0 0 auto;
-  width: 450px;
-  height: 280px;
-  padding: 1rem 1.25rem;
-  border-radius: 12px;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  width: 350px;                /* Wider rectangle */
+  height: 350px;               /* Shorter height for rectangular look */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: var(--box-bg);
+  color: var(--box-text);
+  border: 1px solid var(--box-border);
+  border-radius: 10px;
+  padding: 1.25rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+  overflow: hidden;
 }
+
 
 .work-box:hover {
-  transform: scale(1.03);
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.work-textbox {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.work-textbox .h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: var(--heading-color);
+}
+
+.work-text {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  max-height: 4rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 
-:root {
-  --box-bg: #f9f9f9;
-  --box-text: #111111;
-  --box-border: #dddddd;
-}
-
-body.dark {
-  --box-bg: #161b22;
-  --box-text: #e6edf3;
-  --box-border: #30363d;
-}
-
-
-.work-textbox,
-.work-text,
-.work-technologies,
-.work-technologies li,
-.work-links a {
-  color: inherit;
+.work-technologies {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 .work-technologies li {
-  background-color: rgba(0, 0, 0, 0.08);
+  background-color: var(--badge-bg);
+  color: var(--badge-text);
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
 }
 
-body.dark .work-technologies li {
-  background-color: #21262d;
+.work-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
 }
+
+.work-links a.link {
+  color: var(--primary);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.work-links img {
+  width: 20px;
+  height: 20px;
+}
+
+
+/* === Light/Dark Theme Variables === */
+body.light {
+  --card-bg: #ffffff;
+  --border-color: #e0e0e0;
+  --heading-color: #222;
+  --text-color: #444;
+  --badge-bg: #f0f0f0;
+  --badge-text: #333;
+  --primary: #1a73e8;
+}
+
+body.dark {
+  --card-bg: #1e1e1e;
+  --border-color: #333;
+  --heading-color: #f5f5f5;
+  --text-color: #cccccc;
+  --badge-bg: #2c2c2c;
+  --badge-text: #eeeeee;
+  --primary: #4dabf7;
+}
+
+
+/* === Responsive Fix === */
+@media (max-width: 768px) {
+  .work-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .work-box {
+    width: 90%;
+  }
+}
+
+
+
+
+ 
